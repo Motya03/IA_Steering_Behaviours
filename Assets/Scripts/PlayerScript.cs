@@ -42,7 +42,6 @@ public class PlayerScript : MonoBehaviour
 
         lineSteeringScript.position = transform.position;
         lineSteeringScript.steering = steering;
-        lineSteeringScript.SetColor(Color.blue);
 
         GameObject lineDesired = GameObject.Find("LineDesired");
         lineDesiredDirectionScript = lineDesired.GetComponent<LineScript>();
@@ -135,6 +134,7 @@ public class PlayerScript : MonoBehaviour
 
         lineSteeringScript.position = transform.position + velocity;
         lineSteeringScript.steering = steering;
+        lineSteeringScript.SetColor(Color.blue);
         
         lineDesiredDirectionScript.position = transform.position;
         lineDesiredDirectionScript.steering = desired;
